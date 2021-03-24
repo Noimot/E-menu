@@ -1,0 +1,140 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'san serif', cursive;
+}
+
+.navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    text-decoration: none;
+}
+
+.navbar-brand i {
+    background-color: #F4D5C7;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.navbrand-div > a {
+    color: #708671;
+}
+
+.navbar {
+    width:100vw;
+    position:fixed;
+    border-bottom: 2px solid #D9EEDA;
+    padding: 20px 40px;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-flex {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.search-bar {
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 50px;
+    outline: 0;
+    border-color: #D9EEDA;
+}
+
+.search-bar > i {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: #46B04A;
+}
+
+.form-flex > select {
+    padding: 5px 20px;
+    outline: 0;
+    border-color: #D9EEDA;
+}
+
+.form-flex > button {
+    background-color: #46B04A;
+    padding: 5px 20px;
+    outline: 0;
+    border-radius: 5px;
+    border: 2px solid #46B04A;
+    color: #fff;
+
+}
+
+.all-cities {
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.all-cities > button {
+    margin-left: 20px;
+    padding: 5px 12px;
+    background-color: #46B04A;
+    outline: 0;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restaurant-data {
+    margin-top: 3rem;
+}
+
+.data-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2rem;
+    display: flex;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 2rem;
+}
+
+.menu-image {
+    width: 12rem;
+    height: 12rem;
+}
+
+.menu-image img {
+    width:200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.restaurant-info h3 {
+    font-family: 'Oswald', cursive;
+}
+
+.restaurant-info > p:nth-child(2) {
+    margin-top: 1.2rem;
+}
+
+.restaurant-contact {
+    
+}

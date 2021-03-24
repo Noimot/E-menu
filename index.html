@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90cb4c962d.js" crossorigin="anonymous"></script>
+    <title>E-Menu</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&family=Roboto&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-div">
+            <div class="navbrand-div">
+                <a href="index.html" class="navbar-brand"><i class="fas fa-utensils"></i> &nbsp; E-Menu</a>
+            </div>
+            <form class="form-flex">
+                <select name="restaurantList" id="restaurantList">
+                    <option value="Lagos">Lagos</option>
+                    <option value="Abuja">Abuja</option>
+                    <option value="Ibadan">Ibadan</option>
+                    <option value="Port Harcourt">Port Harcourt</option>
+                    <option value="Abeokuta">Abeokuta</option>
+                    <option value="Kaduna">Kaduna</option>
+                </select>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input class="" type="search" placeholder="search restaurant by city/ menu" name="search">
+                </div>
+
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section class="all-cities">
+        <button id='allCitiesBtn'>All Cities</button>
+        <button id='lagosBtn'>Lagos</button>
+        <button>Abuja</button>
+        <button>Ibadan</button>
+        <button>Port Harcourt</button>
+        <button>Abeokuta</button>
+        <button>Kaduna</button>
+    </section>
+
+    <section class="restaurant-data">
+       
+    </section>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
