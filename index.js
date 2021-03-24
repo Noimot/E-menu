@@ -20,7 +20,7 @@ function loadData() {
                 <p>Addrress: ${data.Address}</P>
                 <p>Menu: ${data.Menu}</P>
                 <div>
-                    <small>City: ${data.city}</small>
+                    <small>City: ${data.city} </small> |
                     <small>Phone Number: ${data.contact}</small>
                 </div>
 
