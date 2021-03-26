@@ -35,7 +35,6 @@ allCitiesBtn.addEventListener('click', () => loadData())
 lagosBtn.addEventListener('click', () => searchCity("Lagos"))
 
 function searchCity(city) {
-    console.log(city)
     let searchResult = Data.filter((item) => item.city===city)
     if(searchResult.length===0) return alert(`${city} not found`);
     restaurantData.innerHTML=``

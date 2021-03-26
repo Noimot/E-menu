@@ -5,15 +5,20 @@
     font-family: 'san serif', cursive;
 }
 
+html {
+    height: 100%;
+}
+
 .navbar-brand {
     font-family: 'Abril Fatface', cursive;
     text-decoration: none;
 }
 
 .navbar-brand i {
-    background-color: #F4D5C7;
+    background-color: #708671;
     padding: 5px;
     border-radius: 50px;
+    color: #ccc;
 }
 
 .navbrand-div > a {
@@ -23,7 +28,6 @@
 .navbar {
     width:100vw;
     position:fixed;
-    border-bottom: 2px solid #D9EEDA;
     padding: 20px 40px;
 }
 
@@ -50,9 +54,9 @@
 .search-bar input {
     width: 100%;
     padding: 10px 40px;
-    border-radius: 50px;
     outline: 0;
-    border-color: #D9EEDA;
+    border: none;
+    border-radius: 5px;
 }
 
 .search-bar > i {
@@ -65,7 +69,8 @@
 .form-flex > select {
     padding: 5px 20px;
     outline: 0;
-    border-color: #D9EEDA;
+    border-radius: 5px;
+    border: none;
 }
 
 .form-flex > button {
@@ -79,9 +84,15 @@
 }
 
 .all-cities {
-    padding-top: 8rem;
+    padding: 10rem 0 0 5rem;
     display: flex;
     justify-content: center;
+    background: url("https://imostateblm.com/wp-content/uploads/2020/01/zege.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1500px;
+    width: 100%;
 }
 
 .all-cities > button {
@@ -97,6 +108,13 @@
 
 .restaurant-data {
     margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+    
+
 }
 
 .data-container {
@@ -105,10 +123,12 @@
     width: 100%;
     margin: 0 auto;
     border: 2rem;
-    display: flex;
     margin-bottom: 15px;
     box-shadow: 3px 3px 5px 6px #ccc;
     border-radius: 2rem;
+    background-color: #ccc;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-image {
@@ -120,21 +140,57 @@
     width:200px;
     height: 100%;
     object-fit: cover;
+    border-radius: 2rem 0 0 2rem;
 }
 
 .restaurant-info {
     margin-left: 20px;
     padding: 10px;
+    word-break: break-word;
 }
 
 .restaurant-info h3 {
     font-family: 'Oswald', cursive;
 }
 
-.restaurant-info > p:nth-child(2) {
+/* .restaurant-info > p:nth-child(2) {
     margin-top: 1.2rem;
+} */
+
+
+
+@media (max-width: 1100px){
+    .navbar {
+        width: 100%;
+    }
+
+    .restaurant-data {
+        grid-template-columns: 500px;
+    }
+
+    .form-flex {
+    width: 700px;  
+    grid-template-columns: 2fr 5fr 1fr; 
+}
+   
 }
 
-.restaurant-contact {
-    
+
+@media (max-width: 480px) {
+    .restaurant-data {
+        grid-template-columns: 450px;
+    }
+
+    .navbrand-div > a {
+    margin-right: auto;
+}
+
+    .form-flex {
+    width: 300px;  
+    grid-template-columns: 2fr 5fr 1fr; 
+}
+
+.all-cities > button {
+   display: none;     
+}
 }
