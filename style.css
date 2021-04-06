@@ -40,7 +40,7 @@ html {
 .form-flex {
     width: 900px;
     display: grid;
-    grid-template-columns: 2fr 5fr 1fr;
+    grid-template-columns: 7fr 2fr;
     gap: 5px;
     align-items: center;
 }
@@ -91,7 +91,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1500px;
+    max-width: 1800px;
     width: 100%;
 }
 
@@ -124,9 +124,8 @@ html {
     margin: 0 auto;
     border: 2rem;
     margin-bottom: 15px;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.6);
     border-radius: 2rem;
-    background-color: #ccc;
     align-items: center;
     justify-content: center;
 }

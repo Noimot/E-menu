@@ -24,32 +24,27 @@
                 <a href="index.html" class="navbar-brand"><i class="fas fa-utensils"></i> &nbsp; E-Menu</a>
             </div>
             <form class="form-flex">
-                <select name="restaurantList" id="restaurantList">
-                    <option value="Lagos">Lagos</option>
-                    <option value="Abuja">Abuja</option>
-                    <option value="Ibadan">Ibadan</option>
-                    <option value="Port Harcourt">Port Harcourt</option>
-                    <option value="Abeokuta">Abeokuta</option>
-                    <option value="Kaduna">Kaduna</option>
-                </select>
+    
                 <div class="search-bar">
                     <i class="fas fa-search"></i>
-                    <input class="" type="search" placeholder="search restaurant by city/ menu" name="search">
+                    <input id="search-input" type="search" placeholder="search restaurant by city/ menu" name="search">
                 </div>
 
-                <button type="submit">Search</button>
+
             </form>
         </div>
     </nav>
 
     <section class="all-cities">
+    
+
         <button id='allCitiesBtn'>All Cities</button>
-        <button id='lagosBtn'>Lagos</button>
-        <button>Abuja</button>
-        <button>Ibadan</button>
-        <button>Port Harcourt</button>
-        <button>Abeokuta</button>
-        <button>Kaduna</button>
+        <button data-city='Lagos' class='btn'>Lagos</button>
+        <button data-city='Abuja' class='btn'>Abuja</button>
+        <button data-city='Ibadan' class='btn'>Ibadan</button>
+        <button data-city='Port Harcourt' class='btn'>Port Harcourt</button>
+        <button data-city='Edo' class='btn'>Edo</button>
+        <button data-city='Kaduna' class='btn'>Kaduna</button>
     </section>
 
     <section class="restaurant-data">
