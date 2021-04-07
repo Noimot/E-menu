@@ -14,7 +14,7 @@ html {
     text-decoration: none;
 }
 
-.navbar-brand i {
+.navbrand-div i {
     background-color: #708671;
     padding: 5px;
     border-radius: 50px;
@@ -33,16 +33,12 @@ html {
 
 .nav-div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .form-flex {
-    width: 900px;
-    display: grid;
-    grid-template-columns: 7fr 2fr;
-    gap: 5px;
-    align-items: center;
+    width: 700px;
+    margin-left: 20rem;
 }
 
 .search-bar {
@@ -66,22 +62,6 @@ html {
     color: #46B04A;
 }
 
-.form-flex > select {
-    padding: 5px 20px;
-    outline: 0;
-    border-radius: 5px;
-    border: none;
-}
-
-.form-flex > button {
-    background-color: #46B04A;
-    padding: 5px 20px;
-    outline: 0;
-    border-radius: 5px;
-    border: 2px solid #46B04A;
-    color: #fff;
-
-}
 
 .all-cities {
     padding: 10rem 0 0 5rem;
@@ -168,10 +148,26 @@ html {
     }
 
     .form-flex {
-    width: 700px;  
-    grid-template-columns: 2fr 5fr 1fr; 
+    width: 500px;  
+    margin-left: 10rem;
 }
+.search-bar {
+     max-width: 500px;
+    width: 100%;
+}
+.all-cities button
+
    
+}
+
+@media (max-width: 500px){
+    .all-cities {
+        padding: 10rem 0 0 0;
+    }
+    
+.all-cities > button {
+    margin-left: 5px;
+    padding: 5px 12px;
 }
 
 
